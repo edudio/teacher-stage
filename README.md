@@ -1,1 +1,1 @@
-# mean-rest-seed
+# teacher-stage
