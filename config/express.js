@@ -14,7 +14,7 @@ module.exports = function (app) {
     app.use(bodyParser.json());
     app.use(bodyParser.urlencoded({extended: false}));
     app.use(cookieParser());
-    app.use(express.static(rootPath + 'ngbp/build'));
+    app.use(express.static(rootPath + 'tsfe/build'));
     require('./routes')(app);
 
 

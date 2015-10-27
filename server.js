@@ -4,7 +4,7 @@ var express = require('express');
 var fs = require('fs');
 
 var env = process.env.NODE_ENV = process.env.NODE_ENV || 'development';
-var environment = require(path.join(rootPath,'config/environment'));
+global.environment = require(path.join(rootPath,'config/environment'));
 
 mongoose.connect(environment.db, function (err) {
     if (!err) {
